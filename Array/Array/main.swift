@@ -39,6 +39,8 @@ class IntegerReference {
 }
 var firstIntegers = [IntegerReference(), IntegerReference()]
 var secondIntegers = firstIntegers
+print(firstIntegers)
+print(secondIntegers)
 
 // Modifications to an instance are visible from either array
 firstIntegers[0].value = 100
@@ -52,3 +54,19 @@ print(firstIntegers[0].value)
 // Prints "10"
 print(secondIntegers[0].value)
 // Prints "100"
+
+print("***")
+
+struct IntegerReference2 {
+    var value = 10
+}
+var firstIntegers2 = [IntegerReference2(), IntegerReference2()]
+
+var secondIntegers2 = firstIntegers2
+
+print(firstIntegers2[0].value)
+print(secondIntegers2[0].value)
+
+firstIntegers2[0].value = 100
+print(firstIntegers2[0].value)
+print(secondIntegers2[0].value)
