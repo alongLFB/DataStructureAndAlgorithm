@@ -70,3 +70,14 @@ print(secondIntegers2[0].value)
 firstIntegers2[0].value = 100
 print(firstIntegers2[0].value)
 print(secondIntegers2[0].value)
+
+var numbers2: [Int] = [3, 4 , 6]
+if let firstNumber = numbers2.first {
+    print(firstNumber)
+    let number = numbers2.index(0, offsetBy: 2)
+    print(number)
+    print(numbers2[number])
+} else {
+    print(numbers2)
+}
+
