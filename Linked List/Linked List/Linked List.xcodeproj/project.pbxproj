@@ -9,10 +9,21 @@
 /* Begin PBXBuildFile section */
 		F42B92D127FAD80D0069A342 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B92D027FAD80D0069A342 /* main.swift */; };
 		F42B92D827FAD8240069A342 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B92D727FAD8240069A342 /* ListNode.swift */; };
+		F42B92E027FAF9610069A342 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B92DF27FAF9610069A342 /* main.swift */; };
+		F42B92E527FAF9D60069A342 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B92D727FAD8240069A342 /* ListNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F42B92CB27FAD80D0069A342 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F42B92DB27FAF9610069A342 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,10 +38,19 @@
 		F42B92CD27FAD80D0069A342 /* Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42B92D027FAD80D0069A342 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F42B92D727FAD8240069A342 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		F42B92DD27FAF9610069A342 /* Reverse Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Reverse Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42B92DF27FAF9610069A342 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F42B92CA27FAD80D0069A342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42B92DA27FAF9610069A342 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				F42B92CF27FAD80D0069A342 /* Linked List */,
+				F42B92DE27FAF9610069A342 /* Reverse Linked List */,
 				F42B92CE27FAD80D0069A342 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				F42B92CD27FAD80D0069A342 /* Linked List */,
+				F42B92DD27FAF9610069A342 /* Reverse Linked List */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +85,14 @@
 				F42B92D727FAD8240069A342 /* ListNode.swift */,
 			);
 			path = "Linked List";
+			sourceTree = "<group>";
+		};
+		F42B92DE27FAF9610069A342 /* Reverse Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				F42B92DF27FAF9610069A342 /* main.swift */,
+			);
+			path = "Reverse Linked List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +115,23 @@
 			productReference = F42B92CD27FAD80D0069A342 /* Linked List */;
 			productType = "com.apple.product-type.tool";
 		};
+		F42B92DC27FAF9610069A342 /* Reverse Linked List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42B92E127FAF9610069A342 /* Build configuration list for PBXNativeTarget "Reverse Linked List" */;
+			buildPhases = (
+				F42B92D927FAF9610069A342 /* Sources */,
+				F42B92DA27FAF9610069A342 /* Frameworks */,
+				F42B92DB27FAF9610069A342 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reverse Linked List";
+			productName = "Reverse Linked List";
+			productReference = F42B92DD27FAF9610069A342 /* Reverse Linked List */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +143,9 @@
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					F42B92CC27FAD80D0069A342 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					F42B92DC27FAF9610069A342 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -114,6 +164,7 @@
 			projectRoot = "";
 			targets = (
 				F42B92CC27FAD80D0069A342 /* Linked List */,
+				F42B92DC27FAF9610069A342 /* Reverse Linked List */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +176,15 @@
 			files = (
 				F42B92D127FAD80D0069A342 /* main.swift in Sources */,
 				F42B92D827FAD8240069A342 /* ListNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42B92D927FAF9610069A342 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42B92E027FAF9610069A342 /* main.swift in Sources */,
+				F42B92E527FAF9D60069A342 /* ListNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +326,28 @@
 			};
 			name = Release;
 		};
+		F42B92E227FAF9610069A342 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5GUHT62N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F42B92E327FAF9610069A342 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5GUHT62N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -283,6 +365,15 @@
 			buildConfigurations = (
 				F42B92D527FAD80D0069A342 /* Debug */,
 				F42B92D627FAD80D0069A342 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42B92E127FAF9610069A342 /* Build configuration list for PBXNativeTarget "Reverse Linked List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42B92E227FAF9610069A342 /* Debug */,
+				F42B92E327FAF9610069A342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
