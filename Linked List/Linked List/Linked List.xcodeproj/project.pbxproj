@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F42A7C00299A610400114DDA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A7BFF299A610400114DDA /* main.swift */; };
+		F42A7C0B299A64C500114DDA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A7C0A299A64C500114DDA /* main.swift */; };
 		F42B92D127FAD80D0069A342 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B92D027FAD80D0069A342 /* main.swift */; };
 		F42B92D827FAD8240069A342 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B92D727FAD8240069A342 /* ListNode.swift */; };
 		F42B92E027FAF9610069A342 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42B92DF27FAF9610069A342 /* main.swift */; };
@@ -16,6 +17,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F42A7BFB299A610400114DDA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F42A7C06299A64C500114DDA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -47,6 +57,8 @@
 /* Begin PBXFileReference section */
 		F42A7BFD299A610400114DDA /* Merge Two Sorted Lists */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Merge Two Sorted Lists"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42A7BFF299A610400114DDA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F42A7C08299A64C500114DDA /* 206. Reverse Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "206. Reverse Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42A7C0A299A64C500114DDA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F42B92CD27FAD80D0069A342 /* Linked List */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Linked List"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42B92D027FAD80D0069A342 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F42B92D727FAD8240069A342 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
@@ -56,6 +68,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		F42A7BFA299A610400114DDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42A7C05299A64C500114DDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,12 +106,21 @@
 			path = "Merge Two Sorted Lists";
 			sourceTree = "<group>";
 		};
+		F42A7C09299A64C500114DDA /* 206. Reverse Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				F42A7C0A299A64C500114DDA /* main.swift */,
+			);
+			path = "206. Reverse Linked List";
+			sourceTree = "<group>";
+		};
 		F42B92C427FAD80D0069A342 = {
 			isa = PBXGroup;
 			children = (
 				F42B92CF27FAD80D0069A342 /* Linked List */,
 				F42B92DE27FAF9610069A342 /* Reverse Linked List */,
 				F42A7BFE299A610400114DDA /* Merge Two Sorted Lists */,
+				F42A7C09299A64C500114DDA /* 206. Reverse Linked List */,
 				F42B92CE27FAD80D0069A342 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +131,7 @@
 				F42B92CD27FAD80D0069A342 /* Linked List */,
 				F42B92DD27FAF9610069A342 /* Reverse Linked List */,
 				F42A7BFD299A610400114DDA /* Merge Two Sorted Lists */,
+				F42A7C08299A64C500114DDA /* 206. Reverse Linked List */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +171,23 @@
 			name = "Merge Two Sorted Lists";
 			productName = "Merge Two Sorted Lists";
 			productReference = F42A7BFD299A610400114DDA /* Merge Two Sorted Lists */;
+			productType = "com.apple.product-type.tool";
+		};
+		F42A7C07299A64C500114DDA /* 206. Reverse Linked List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42A7C0C299A64C500114DDA /* Build configuration list for PBXNativeTarget "206. Reverse Linked List" */;
+			buildPhases = (
+				F42A7C04299A64C500114DDA /* Sources */,
+				F42A7C05299A64C500114DDA /* Frameworks */,
+				F42A7C06299A64C500114DDA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "206. Reverse Linked List";
+			productName = "206. Reverse Linked List";
+			productReference = F42A7C08299A64C500114DDA /* 206. Reverse Linked List */;
 			productType = "com.apple.product-type.tool";
 		};
 		F42B92CC27FAD80D0069A342 /* Linked List */ = {
@@ -191,6 +237,9 @@
 					F42A7BFC299A610400114DDA = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					F42A7C07299A64C500114DDA = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					F42B92CC27FAD80D0069A342 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -215,6 +264,7 @@
 				F42B92CC27FAD80D0069A342 /* Linked List */,
 				F42B92DC27FAF9610069A342 /* Reverse Linked List */,
 				F42A7BFC299A610400114DDA /* Merge Two Sorted Lists */,
+				F42A7C07299A64C500114DDA /* 206. Reverse Linked List */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +275,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42A7C00299A610400114DDA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42A7C04299A64C500114DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42A7C0B299A64C500114DDA /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +321,32 @@
 			name = Debug;
 		};
 		F42A7C02299A610400114DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5GUHT62N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F42A7C0D299A64C500114DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KE5GUHT62N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F42A7C0E299A64C500114DDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -440,6 +524,15 @@
 			buildConfigurations = (
 				F42A7C01299A610400114DDA /* Debug */,
 				F42A7C02299A610400114DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42A7C0C299A64C500114DDA /* Build configuration list for PBXNativeTarget "206. Reverse Linked List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42A7C0D299A64C500114DDA /* Debug */,
+				F42A7C0E299A64C500114DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
